@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chez Mariama — Cuisine guinéenne à Conakry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f1;--ink:#14231c;--green:#12372a;--gold:#f2b531;--chili:#c4301c;--card:#ffffff;--line:#d9ddd0;--muted:#55645b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a14;--ink:#f1f3ea;--green:#0a251b;--card:#16271f;--line:#2a3d33;--muted:#a3b2a8}}
+:root[data-theme="dark"]{--bg:#0e1a14;--ink:#f1f3ea;--green:#0a251b;--card:#16271f;--line:#2a3d33;--muted:#a3b2a8}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.05}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.hero{background:var(--green);color:#f6f7f1;padding:56px 0 64px}
+.hero .name{font:600 16px "Source Sans 3",sans-serif;color:var(--gold)}
+.hero h1{font-size:clamp(40px,9vw,84px);font-weight:800;margin:14px 0 18px;max-width:11ch}
+.hero p{max-width:46ch;color:#dfe6dc;font-size:19px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:14px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:17px}
+.btn.main{background:var(--gold);color:#14231c}
+.btn.alt{border:2px solid #f6f7f1;color:#f6f7f1}
+.btn:focus-visible{outline:3px solid var(--chili);outline-offset:3px}
+.info{display:flex;flex-wrap:wrap;gap:8px 32px;background:var(--gold);color:#14231c;padding:14px 20px;font-weight:600}
+section{padding:56px 0}
+h2{font-size:clamp(30px,6vw,46px);margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:28px}
+.menu{display:grid;gap:0}
+.dish{display:flex;gap:16px;align-items:baseline;padding:18px 0;border-bottom:1px dashed var(--line)}
+.dish h3{font-size:22px;font-weight:700}
+.dish p{color:var(--muted);font-size:16px}
+.dish .txt{flex:1}
+.price{font:700 20px "Bricolage Grotesque",sans-serif;white-space:nowrap}
+.cat{font:700 24px "Bricolage Grotesque",sans-serif;margin:34px 0 4px;color:var(--chili)}
+.cols{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.box h3{font-size:22px;margin-bottom:8px}
+.order{background:var(--green);color:#f6f7f1;text-align:center}
+.order h2{margin-bottom:12px}
+.order p{max-width:48ch;margin:0 auto 24px;color:#dfe6dc}
+footer{padding:28px 0;font-size:14px;color:var(--muted);text-align:center}
+footer a{color:inherit}
+@media(max-width:520px){.dish{flex-direction:column;gap:2px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="name">Chez Mariama · Conakry</div>
+    <h1>Le goût de Conakry, servi chaud.</h1>
+    <p>Riz gras, poisson braisé, sauce feuille : la cuisine guinéenne préparée chaque jour, sur place ou à emporter.</p>
+    <div class="btns">
+      <a class="btn main" href="https://wa.me/224000000000?text=Bonjour%2C%20je%20voudrais%20commander" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+      <a class="btn alt" href="#menu">Voir le menu</a>
+    </div>
+  </div>
+</header>
+<div class="info"><span>Ouvert tous les jours, 11h – 22h</span><span>Livraison à Kaloum, Dixinn et Matam</span></div>
+
+<section id="menu">
+  <div class="wrap">
+    <h2>Le menu</h2>
+    <p class="sub">Prix en francs guinéens (GNF).</p>
+    <div class="menu">
+      <div class="cat">Plats du jour</div>
+      <div class="dish"><div class="txt"><h3>Riz gras au poulet</h3><p>Riz parfumé cuit dans la sauce tomate, poulet grillé, légumes.</p></div><div class="price">60 000</div></div>
+      <div class="dish"><div class="txt"><h3>Sauce feuille et riz blanc</h3><p>Feuilles de manioc mijotées, poisson fumé, huile de palme.</p></div><div class="price">45 000</div></div>
+      <div class="dish"><div class="txt"><h3>Poulet yassa</h3><p>Poulet mariné au citron et aux oignons, servi avec du riz.</p></div><div class="price">65 000</div></div>
+      <div class="cat">Grillades</div>
+      <div class="dish"><div class="txt"><h3>Poisson braisé</h3><p>Capitaine entier, sauce pimentée, banane plantain ou attiéké.</p></div><div class="price">90 000</div></div>
+      <div class="dish"><div class="txt"><h3>Brochettes de bœuf</h3><p>Six brochettes, oignons, piment maison.</p></div><div class="price">50 000</div></div>
+      <div class="cat">Boissons</div>
+      <div class="dish"><div class="txt"><h3>Bissap, gingembre ou jus de baobab</h3><p>Préparés maison, servis frais.</p></div><div class="price">10 000</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap cols">
+    <div class="box"><h3>Sur place</h3><p>Salle climatisée et terrasse, 40 couverts. Réservation conseillée le vendredi et le samedi.</p></div>
+    <div class="box"><h3>À emporter</h3><p>Commandez par WhatsApp, votre repas est prêt en 20 minutes.</p></div>
+    <div class="box"><h3>Événements</h3><p>Anniversaires, repas d'entreprise, buffets. Demandez un devis.</p></div>
+  </div>
+</section>
+
+<section class="order">
+  <div class="wrap">
+    <h2>Une envie ? Écrivez-nous.</h2>
+    <p>Envoyez votre commande ou votre réservation sur WhatsApp, nous confirmons en quelques minutes.</p>
+    <a class="btn main" href="https://wa.me/224000000000?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server" target="_blank" rel="noopener">Réserver une table</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Chez Mariama, quartier Kaloum, Conakry. Site de démonstration créé par Joseph Biyö Toundoufedouno.</div>
+</footer>
+</body>
+</html>
